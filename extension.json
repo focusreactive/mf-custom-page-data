@@ -1,0 +1,8 @@
+{
+  "id": "mf-custom-page-data",
+  "name": "mf-custom-page-data",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": [
+    "Object"
+  ]
+}

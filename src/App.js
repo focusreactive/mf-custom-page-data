@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ThemeProvider } from 'emotion-theming';
 import '@contentful/forma-36-react-components/dist/styles.css';
 import { TextInput } from '@contentful/forma-36-react-components';
 
 import './index.css';
+import Order from './UI/Order';
+import { theme } from './theme';
+import Layout from './UI/Layout';
+import ComponentView from './UI/ComponentView';
+import FieldEditor from './UI/FieldEditor';
 
 function App({ sdk }) {
   const initValue = sdk.field.getValue();
@@ -34,10 +40,14 @@ function App({ sdk }) {
   }, []);
   const { order = [], components = {} } = data || {};
   return (
-    <div>
-      <div>{JSON.stringify(order)}</div>
-      <div>{JSON.stringify(components)}</div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Layout
+        fullscreen={false}
+        renderOrder={() => <Order order={order} />}
+        renderComponent={() => <ComponentView data={components} />}
+        renderEditor={() => <FieldEditor value="#Hello Contentful \n\nlorem ipsum" />}
+      />
+    </ThemeProvider>
   );
 }
 App.propTypes = {

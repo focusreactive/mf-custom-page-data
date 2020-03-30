@@ -1,0 +1,154 @@
+{
+  "order": [
+      "Careers > Our vision",
+      "Separator",
+      "ourValues",
+      "employeeProfiles",
+      "happyCarousel",
+      "rollovers",
+      "careAbout",
+      "Careers > Diversity statement",
+      "Separator",
+      "Glassdoor",
+      "Offices"
+  ],
+  "components": {
+      "careAbout": {
+          "cards": [
+              {
+                  "text": "// Health insurance\n\n// Bike discount\n\n// Discounted gym membership\n\n// Equal opportunity employer\n\n// 25 days holiday\n\n// Your birthday off\n\n",
+                  "image": "PERKS Row 1_Image.jpg",
+                  "title": "Your health and wellbeing"
+              },
+              {
+                  "text": "// Options scheme\n\n// Company matched pension of 4%\n\n// Interest free season ticket loan\n\n// Enhanced maternity leave\n\n",
+                  "image": "PERKS Row 2_Image.jpg",
+                  "title": "Your family and finances"
+              },
+              {
+                  "text": "// Free snacks and drinks\n\n// Weekly Friday night get togethers\n\n// Table tennis & foosball\n\n// Great East London location\n\n",
+                  "image": "PERKS Row 3_Image.jpg",
+                  "title": "Your working environment"
+              },
+              {
+                  "text": "// Free Kindle and unlimited ebooks\n\n// Personal development training budget\n\n// Community events\n\n",
+                  "image": "PERKS Row 4_Image.jpg",
+                  "title": "Your learning and development"
+              }
+          ],
+          "title": "Perks for our people",
+          "subtitle": "We care about"
+      },
+      "ourValues": {
+          "title": "Our Values",
+          "values": [
+              {
+                  "text": "We're focused on getting the important stuff done first. We don't get bogged down, we find solutions (they're out there!).",
+                  "title": "#MakeItHappen",
+                  "accent": "red"
+              },
+              {
+                  "text": "We always put the whole company first - when we succeed collectively, we all succeed individually. Everyone has a voice, we listen to each other's opinions.",
+                  "title": "#1Team1Dream",
+                  "accent": "yellow"
+              },
+              {
+                  "text": "The only constant is change: we embrace change and learn. We ask and listen for feedback, and always provide it too.",
+                  "title": "#AlwaysBeLearning",
+                  "accent": "cyan"
+              }
+          ]
+      },
+      "rollovers": {
+          "items": [
+              {
+                  "text": "",
+                  "title": "Behind the scenes",
+                  "accent": "yellow",
+                  "background": "Block 2 image.jpg",
+                  "youtubeVideoId": "bk0f9zw4-i4"
+              },
+              {
+                  "link": "https://blog.marketfinance.com/category/careers/",
+                  "text": "",
+                  "title": "Meet the team",
+                  "accent": "red",
+                  "background": "Block 1 image.jpg"
+              },
+              {
+                  "text": "",
+                  "title": "Hear our story",
+                  "accent": "cyan",
+                  "background": "hear-our-story.jpg",
+                  "youtubeVideoId": "iJLEhmYUkyw"
+              }
+          ],
+          "title": "Working at MarketFinance"
+      },
+      "happyCarousel": {
+          "items": [
+              {
+                  "title": "happy face 1",
+                  "background": "CAROUSEL - Image 1.jpg"
+              },
+              {
+                  "title": "happy face 2",
+                  "background": "Careers_Carousel_5.jpg"
+              },
+              {
+                  "title": "happy face 2",
+                  "background": "Careers_Carousel_1.jpg"
+              },
+              {
+                  "title": "happy face 3",
+                  "background": "Careers_Carousel_6.jpg"
+              },
+              {
+                  "title": "happy face 2",
+                  "background": "Careers_Carousel_7.jpg"
+              }
+          ]
+      },
+      "employeeProfiles": {
+          "people": [
+              {
+                  "name": "Dandan Shi",
+                  "role": "Data Science",
+                  "image": "https://images.ctfassets.net/trrkflkwvafb/6SaIDhO61DFhoDXnpOgogK/2908156b578072555f95460f54e9bb50/DANDAN_SHI.png",
+                  "quote": "We use predictive models and data analysis to drive decisions. The work we do is used quickly and by every team at MarketFinance. It’s really rewarding because you can actually see the impact that you’re having on the business."
+              },
+              {
+                  "name": "Mike Gray",
+                  "role": "Design",
+                  "image": "/static/assets/images/front/careers/mike-gray-profile.jpg",
+                  "quote": "I enjoy being part of a small, multi-disciplinary team. We tackle a variety of design problems; from creating tools for internal stakeholders to external products and services, delivering the best value to our customers."
+              },
+              {
+                  "name": "Robyn Schuleman",
+                  "role": "Marketing",
+                  "image": "https://images.ctfassets.net/trrkflkwvafb/1DPIQ2YlJsvRa2VhkuAeMR/4bbff6eec0775ef40ef16e2ad33734b2/ROBYN_SCHULEMAN.png",
+                  "quote": "I feel proud coming into work every day knowing that we're all genuinely trying to do the best by our customers. We're here to help businesses do the things that really matter to them. That's a simple, but very powerful, mission!"
+              },
+              {
+                  "name": "Chris Findlow",
+                  "role": "Sales",
+                  "image": "https://images.ctfassets.net/trrkflkwvafb/5sbHcwTquoO6YTUcSn2AZY/b41facee989cc6a3d9c74aab122dd59f/Chris-Headshot.jpg",
+                  "quote": "Our people are our biggest asset, and one of the best things about working here. The team is made up of bright and talented people from an impressive variety of backgrounds."
+              },
+              {
+                  "name": "Mason L'amy",
+                  "role": "Engineering",
+                  "image": "/static/assets/images/front/careers/mason-profile.jpg",
+                  "quote": "We have a great culture here that's rooted in action. We can make decisions quickly to continuously adapt and drive our technology with best practices."
+              },
+              {
+                  "name": "Avani Painter",
+                  "role": "Product",
+                  "image": "https://images.ctfassets.net/trrkflkwvafb/1kNIBclaNbcAtVGO6dWMcP/33b8d7ec8e08cee9068a1bc8555a61a3/AVANI_PAINTER.png",
+                  "quote": "It’s been extremely energising working with so many different stakeholders who are all aiming to find a solution that enhances our customers’ experience. The continuous focus on improvements and innovation means that no two days are ever the same."
+              }
+          ],
+          "ctaHref": "https://blog.marketfinance.com/category/careers/meet-the-team/"
+      }
+  }
+}

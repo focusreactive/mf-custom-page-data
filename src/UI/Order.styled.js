@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
   color: ${({ theme }) => theme.palette.textMain};
   min-width: 100px;
+  overflow-y: auto;
+
   ul {
     list-style: none;
     margin: 0;

@@ -16,7 +16,7 @@ export const Container = styled.div`
 `;
 
 export const ComponensRow = styled.div`
-  max-height: 600px;
+  max-height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -25,6 +25,6 @@ export const ComponensRow = styled.div`
 
 export const EditorHolder = styled.div`
   margin-top: 8px;
-  max-height: 300px;
+  max-height: 500px;
   background-color: ${({ theme }) => theme.palette.backgroundMain};
 `;

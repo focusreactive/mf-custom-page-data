@@ -19,6 +19,8 @@
     "@storybook/react": "^5.3.17",
     "@testing-library/react": "10.0.1",
     "babel-loader": "^8.1.0",
+    "babel-plugin-jsx-pragmatic": "^1.0.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "contentful-cli": "1.2.14",
     "cssnano": "4.1.10",
     "eslint": "^6.0.1"
@@ -42,7 +44,13 @@
     "@contentful/forma-36-fcss": "^0.0.34",
     "@contentful/forma-36-react-components": "^3.11.3",
     "@contentful/forma-36-tokens": "^0.5.1",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@toast-ui/react-editor": "^2.0.0",
+    "@usulpro/react-json-view": "^2.0.0",
+    "babel-plugin-emotion": "^10.0.29",
     "contentful-ui-extensions-sdk": "3.11.1",
+    "emotion-theming": "^10.0.27",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

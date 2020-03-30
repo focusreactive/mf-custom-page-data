@@ -1,20 +1,12 @@
+import careersMock from './careers.mock.json'
+
 const defaultFn = (title = 'SDK', cb = () => {}) => (...args) => {
   const result = cb(...args);
-  console.log(`${title}\n`, ...args, 'return\n', result);
+  console.log(`SDK - ${title}:\n`, ...args, 'return\n', result);
   return result;
 };
 
-export const initialValue = {
-  order: ['component1', 'Separator', 'component2'],
-  components: {
-    component1: {
-      data: 'info'
-    },
-    component2: {
-      data: 'info'
-    }
-  }
-};
+export const initialValue = careersMock;
 
 export const createSdk = fn => {
   const fnOr = (title, cb) => (fn ? fn() : defaultFn(title, cb));

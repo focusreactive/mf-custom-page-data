@@ -8,6 +8,7 @@ yarn-error.log*
 # dotenv environment variables file
 .env
 .contentfulrc.json
+env.sh
 
 # Parcel-bundler cache
 .cache

@@ -46,17 +46,17 @@ function App({ sdk }) {
 
   const [selectedKey, setSelectedKey] = React.useState(null);
 
-  const selectComponent = index => {
-    if (!index) {
+  const selectComponent = ({ ind, name }) => {
+    console.log('selectComponent -> { ind, name }', { ind, name });
+    if (!name) {
       setSelectedKey(null);
       return;
     }
-    const key = order[index];
-    if (!components[key]) {
-      setSelectedKey(null);
-      return;
-    }
-    setSelectedKey(key);
+    // if (!components[name]) {
+    //   setSelectedKey(null);
+    //   return;
+    // }
+    setSelectedKey(name);
   };
 
   const selectedComponent = selectedKey ? components[selectedKey] : null;
@@ -116,17 +116,30 @@ function App({ sdk }) {
     <ThemeProvider theme={theme}>
       <Layout
         fullscreen={false}
-        renderOrder={() => <Order order={order} onSelect={selectComponent} />}
-        renderComponent={() => (
-          <ComponentView data={selectedComponent} title={selectedKey} onSelect={selectPath} />
+        renderOrder={toggleExpand => (
+          <Order
+            order={order}
+            onSelect={selectComponent}
+            selectedName={selectedKey}
+            toggleExpand={toggleExpand}
+          />
         )}
-        renderEditor={() => (
+        renderComponent={toggleExpand => (
+          <ComponentView
+            data={selectedComponent}
+            title={selectedKey}
+            onSelect={selectPath}
+            toggleExpand={toggleExpand}
+          />
+        )}
+        renderEditor={toggleExpand => (
           <FieldEditor
             pathString={selectedValue}
             // pathString={pathString}
             value={selectedValue}
             onFinishEditing={updateValue}
             onEdit={refreshValue}
+            toggleExpand={toggleExpand}
           />
         )}
       />

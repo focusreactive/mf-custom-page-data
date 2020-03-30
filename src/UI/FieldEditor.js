@@ -4,8 +4,10 @@ import '@toast-ui/editor/dist/toastui-editor.css';
 import { Editor } from '@toast-ui/react-editor';
 
 import * as styled from './FieldEditor.styled';
+import Toolbar from './Toolbar';
+import Button from './Button';
 
-const FieldEditor = ({ value, onEdit, onFinishEditing, pathString }) => {
+const FieldEditor = ({ value, onEdit, onFinishEditing, pathString, toggleExpand }) => {
   const editorInstance = React.useRef(null);
 
   const handleChange = cb => () => {
@@ -22,6 +24,12 @@ const FieldEditor = ({ value, onEdit, onFinishEditing, pathString }) => {
 
   return (
     <styled.Container>
+      <div className="toolbar-holder">
+        <Toolbar>
+          <h3>Field editor</h3>
+          <Button onClick={toggleExpand}>Expand</Button>
+        </Toolbar>
+      </div>
       <Editor
         key={pathString}
         initialValue={value}

@@ -1,29 +1,38 @@
 import React from 'react';
 
 import * as styled from './Layout.styled';
-import { EditorToolbar, EditorToolbarButton } from '@contentful/forma-36-react-components';
+
+const ORDER = 'ORDER';
+const VIEW = 'VIEW';
+const EDIT = 'EDIT';
 
 const Layout = ({ renderOrder, renderComponent, renderEditor }) => {
-  const [fullscreen, setFullscreen] = React.useState(false);
-  const handleFullscreenClick = () => {
-    setFullscreen(!fullscreen);
+  const [expanded, setExpanded] = React.useState(null);
+
+  const expandComponent = componennt => () => {
+    if (expanded) {
+      setExpanded(null);
+      return;
+    }
+    setExpanded(componennt);
   };
+
+  if (expanded) {
+    const render = {
+      [ORDER]: () => renderOrder(expandComponent(ORDER)),
+      [VIEW]: () => renderComponent(expandComponent(VIEW)),
+      [EDIT]: () => renderEditor(expandComponent(EDIT))
+    }[expanded];
+    return <styled.Container data-full>{render()}</styled.Container>;
+  }
+
   return (
-    <styled.Container data-full={fullscreen}>
-      <EditorToolbar>
-        <EditorToolbarButton
-          icon="ExternalLink"
-          tooltip="Full Screen"
-          label="FullScreen"
-          isActive={true}
-          onClick={handleFullscreenClick}
-        />
-      </EditorToolbar>
+    <styled.Container>
       <styled.ComponensRow>
-        {renderOrder()}
-        {renderComponent()}
+        {renderOrder(expandComponent(ORDER))}
+        {renderComponent(expandComponent(VIEW))}
       </styled.ComponensRow>
-      <styled.EditorHolder>{renderEditor()}</styled.EditorHolder>
+      <styled.EditorHolder>{renderEditor(expandComponent(EDIT))}</styled.EditorHolder>
     </styled.Container>
   );
 };

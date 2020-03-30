@@ -1,7 +1,9 @@
 export const theme = {
   palette: {
     backgroundMain: 'white',
-    backgroundAccent: '#c3cfd5',
-    textMain: 'black'
-  }
+    backgroundAccent: '#d8ecf3',
+    hover: 'hsl(0, 0%, 95%)',
+    textMain: 'black',
+    darkGray: 'gray',
+  },
 };

@@ -4,10 +4,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   max-height: 1000px;
-  background-color: ${({ theme }) => theme.palette.backgroundAccent};
+  /* min-height: 600px; */
+  background-color: ${({ theme }) => theme.palette.backgroundMain};
 
   &[data-full='true'] {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     width: 100%;
@@ -21,10 +22,12 @@ export const ComponensRow = styled.div`
   flex-direction: row;
   justify-content: start;
   background-color: ${({ theme }) => theme.palette.backgroundMain};
+
 `;
 
 export const EditorHolder = styled.div`
   margin-top: 8px;
+  padding-top: 2px;
   max-height: 500px;
   background-color: ${({ theme }) => theme.palette.backgroundMain};
 `;

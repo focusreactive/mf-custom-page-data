@@ -1,21 +1,36 @@
 import React from 'react';
-import * as styled from './Order.styled';
-
 import { Card } from '@contentful/forma-36-react-components';
 
-const Order = ({ order, onSelect, selectedInd }) => {
-  const handleClick = ind => () => {
-    onSelect(ind);
+import * as styled from './Order.styled';
+import Toolbar from './Toolbar';
+import Button from './Button';
+
+const Order = ({ order, onSelect, selectedName, toggleExpand }) => {
+  const handleClick = ({ ind, name }) => () => {
+    onSelect({ ind, name });
   };
   return (
     <styled.Container>
-      <ul>
-        {order.map((item, ind) => (
-          <Card key={`${ind}-${item}`} onClick={handleClick(ind)}>
-            {item}
-          </Card>
-        ))}
-      </ul>
+      <div className="toolbar-holder">
+        <Toolbar>
+          <h3>Components Order</h3>
+          <Button onClick={toggleExpand}>Expand</Button>
+        </Toolbar>
+      </div>
+      <div className="list-holder">
+        <ul>
+          {order.map((item, ind) => (
+            <li key={`${ind}-${item}`}>
+              <Card
+                className="component-card"
+                onClick={handleClick({ ind, name: item })}
+                selected={selectedName === item}>
+                {item}
+              </Card>
+            </li>
+          ))}
+        </ul>
+      </div>
     </styled.Container>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import App from './App';
+import CM from './YamlEditor';
 import { createSdk } from './utils/sdk-mock';
 import styled from '@emotion/styled';
 
@@ -51,7 +52,7 @@ export const AppStory = () => (
           Data
         </div>
         <div className="entity-editor__control-group">
-          <App sdk={createSdk()} />
+          <CM sdk={createSdk()} />
         </div>
       </div>
     </div>

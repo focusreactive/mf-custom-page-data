@@ -147,7 +147,7 @@ function App({ sdk }) {
   );
 }
 App.propTypes = {
-  sdk: PropTypes.object.isRequired
+  sdk: PropTypes.object.isRequired,
 };
 
 export default App;

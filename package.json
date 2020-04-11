@@ -51,10 +51,13 @@
     "@toast-ui/react-editor": "^2.0.0",
     "@usulpro/react-json-view": "^2.0.0",
     "babel-plugin-emotion": "^10.0.29",
+    "codemirror": "^5.52.2",
     "contentful-ui-extensions-sdk": "3.11.1",
     "emotion-theming": "^10.0.27",
+    "js-yaml": "^3.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-codemirror2": "^7.1.0",
     "react-dom": "^16.8.6"
   },
   "browserslist": [

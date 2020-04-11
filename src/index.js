@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { init } from 'contentful-ui-extensions-sdk';
 
 import App from './App';
+import CM from './YamlEditor';
 
 init(sdk => {
-  ReactDOM.render(<App sdk={sdk} />, document.getElementById('root'));
+  ReactDOM.render(<CM sdk={sdk} />, document.getElementById('root'));
 });
-
 
 /**
  * By default, iframe of the extension is fully reloaded on every save of a source file.

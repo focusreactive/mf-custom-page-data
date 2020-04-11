@@ -2,7 +2,7 @@ import careersMock from './careers.mock.json'
 
 const defaultFn = (title = 'SDK', cb = () => {}) => (...args) => {
   const result = cb(...args);
-  console.log(`SDK - ${title}:\n`, ...args, 'return\n', result);
+  // console.log(`SDK - ${title}:\n`, ...args, 'return\n', result);
   return result;
 };
 

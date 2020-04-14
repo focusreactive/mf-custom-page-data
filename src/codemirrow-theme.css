@@ -5,7 +5,7 @@
 }
 
 .cm-s-mf-plugin.CodeMirror, .cm-s-mf-plugin .CodeMirror-gutters {
-  background-color: white !important;
+  background-color: white;
   color: #323236 !important;
   border: none;
 }
